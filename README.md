@@ -2,6 +2,11 @@
 
 Hello, this is Siddanth, pursuing Civil Engg. (I year) ! I'm going to guide you how I was able to setup Rails application in a Docker environment, step by step. This setup includes running our app with a separate MySQL database container, using Nginx as a reverse proxy, adding persistence, managing containers with Docker Compose, and implementing rate limiting with Nginx.
 
+## Flow of the application 
+
+![IMG_5446](https://github.com/Ranjan-S1227/iris-project/assets/76945354/adffd6f0-546c-4b89-b3a6-73fffa237e30)
+
+
 ## 1. Dockerizing the Rails Application
 
 Firstly, I had to encapsulate our application within a Docker container. This process involved creating a **Dockerfile** that specifies how the Rails environment is set up, including installing necessary dependencies and copying the application code into the container. The goal was to create an isolated environment that mimics our production setup, ensuring consistency across development, testing, and production. 
@@ -28,6 +33,9 @@ I introduced a MySQL container to act as database. Pulled the mysql:latest image
 docker-compose up  #to launch the containers simultaneously
 ```
 ![Screenshot 2024-03-17 at 11 54 34 PM](https://github.com/Ranjan-S1227/iris-project/assets/76945354/5718265a-88f3-49d5-b1ae-3f51090f6d75)
+
+Connection Successful !! 
+ ![Screenshot 2024-03-18 at 12 24 38 AM](https://github.com/Ranjan-S1227/iris-project/assets/76945354/b0fc3600-c98a-4055-b06e-2ef4cc309f75)
 
 
 ## 3. Introducing Nginx as a Reverse Proxy
@@ -120,7 +128,13 @@ The variability in response times and the existence of requests that took signif
 These observations collectively indicate that the rate limiting setup is active and effectively limiting the rate at which individual clients can make requests to  server, as per the configuration you've established.
 
 
+## Result 
 
+All the tasks(except Bonus) are completed and the application is perfectly running in the local(development) environment. 
+![Screenshot 2024-03-18 at 12 08 32 AM](https://github.com/Ranjan-S1227/iris-project/assets/76945354/3247dbad-9934-4355-a847-d16dbe046129)
+
+
+![Screenshot 2024-03-18 at 12 09 08 AM](https://github.com/Ranjan-S1227/iris-project/assets/76945354/0f159f91-968c-4b01-bb9f-ff228aa80605)
 
 
 
