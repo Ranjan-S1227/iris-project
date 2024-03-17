@@ -34,13 +34,14 @@ docker-compose up  #to launch the containers simultaneously
 ```
 ![Screenshot 2024-03-17 at 11 54 34 PM](https://github.com/Ranjan-S1227/iris-project/assets/76945354/5718265a-88f3-49d5-b1ae-3f51090f6d75)
 
-Connection Successful !! 
+**Connection Successful !!**
+
  ![Screenshot 2024-03-18 at 12 24 38 AM](https://github.com/Ranjan-S1227/iris-project/assets/76945354/b0fc3600-c98a-4055-b06e-2ef4cc309f75)
 
 
 ## 3. Introducing Nginx as a Reverse Proxy
 
-I integrated an Nginx container to serve as a reverse proxy for the application's accessibility and security. This setup directed incoming traffic through Nginx before reaching the Rails application, providing an additional layer of abstraction and security. Configuring Nginx for reverse proxying also allowed us to hide the inner workings of our application network. 
+I integrated an Nginx container to serve as a reverse proxy for the application's accessibility and security. This setup directed incoming traffic through Nginx before reaching the Rails application, providing an additional layer of abstraction and security. Configuring Nginx for reverse proxying also allowed us to hide the inner workings of our application network. Is exposed to port 8080. No direct request to application instance can be made. It has to pass through the procy server.
 
 Here's the Nginx config : [Nginx Conf](https://github.com/Siddanth-S/iris-project/blob/main/nginx/nginx.conf)
 
