@@ -49,6 +49,7 @@ Here's the Nginx config : [Nginx Conf](https://github.com/Siddanth-S/iris-projec
 ## 4.  Scaling with Multiple Application Containers
 
 I setup to include two additional Rails containers, ensuring our application could handle increased traffic gracefully. This scaling was facilitated by Nginx's load balancing feature, which distributed incoming requests evenly across the three containers. This approach improved application's availability. 
+
 ![Screenshot 2024-03-17 at 11 57 17 PM](https://github.com/Ranjan-S1227/iris-project/assets/76945354/5a573228-bd8c-4a03-a2f6-e257d1dffb72)
 
 
@@ -132,6 +133,8 @@ These observations collectively indicate that the rate limiting setup is active 
 ## Result 
 
 All the tasks(except Bonus) are completed and the application is perfectly running in the local(development) environment. 
+
+
 ![Screenshot 2024-03-18 at 12 08 32 AM](https://github.com/Ranjan-S1227/iris-project/assets/76945354/3247dbad-9934-4355-a847-d16dbe046129)
 
 
