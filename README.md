@@ -10,7 +10,7 @@ Here's the DockerFile : *******
 
 Build the image with:
 
-```
+```yml
 docker build -t my-rails-app .
 ```
 
